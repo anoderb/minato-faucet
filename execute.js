@@ -81,11 +81,18 @@ const abi = [
 ];
 
 // The address of the deployed contract
-const contractAddress = "0xF59f851ead4E36A143cbd14A77efe5a895272D65";
+const contractAddress = "0xc8a1e9FE709726ff3a3AF8325a8EAE5dB5b34439";
 const balance = "100000000";
-const contractToken = "0x0AC1CC398342Aab9f8fFE43dD578B2dF59ceEa5E";
+const contractToken = "0x6F405A7fdc7b4B1Ffad1C821a6bA89f13b48c4F3";
 
+// weth
+// const valueInWei = ethers.utils.parseEther("0.1");
+// const contractAddress = "0xe173Bd5a0e2aC0ae89fc357c17693ee1c4ee545d";
+// const balance = valueInWei;
+// const contractToken = "0x0ac1cc398342aab9f8ffe43dd578b2df59ceea5e";
 // Create the contract instance
+
+
 const contract = new ethers.Contract(contractAddress, abi, wallet);
 async function executeContract() {
   try {
